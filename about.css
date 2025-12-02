@@ -1,0 +1,164 @@
+/* COLORS */
+:root {
+    --orange: #F28B30;
+    --teal: #2AAFA5;
+    --cream: #FFF7E8;
+}
+
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* INTRO */
+.intro {
+    background: var(--orange);
+    color: #fff;
+    display: flex;
+    padding: 60px 8%;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 85%;
+}
+
+.intro-img img {
+    width: 400px;
+    border-radius: 12px;
+}
+
+.pill {
+    padding: 8px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.teal { background: var(--teal); color: #fff; }
+.orange { background: var(--orange); color: #fff; }
+
+/* MISSION SECTION */
+.mission-section {
+    background: var(--teal);
+    color: #fff;
+    display: flex;
+    padding: 60px 8%;
+}
+
+.mission-img img {
+    width: 380px;
+    border: 6px solid var(--orange);
+    border-radius: 12px;
+}
+
+.mission-text {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.mv-block {
+    margin-bottom: 30px;
+    max-width: 80%;
+}
+
+.mv-block p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* TEAM */
+.team {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #FFAC1F;
+}
+
+.team-title{
+    background-color: var(--orange);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.team-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    margin: 10px 0 5px;
+}
+
+.team-card span {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* MEMBERS */
+.members {
+    padding: 60px 8%;
+    background-color: #FFAC1F;
+}
+
+.member-title{
+    background-color: var(--orange);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.members h2 {
+    text-align: center;
+}
+
+.member-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.member-list ul {
+    list-style: disc;
+}
+
+.member-list li {
+    margin-bottom: 6px;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--cream);
+    padding: 50px 8%;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.footer-right a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #444;
+}
