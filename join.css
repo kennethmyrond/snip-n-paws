@@ -1,0 +1,172 @@
+/* COLOR SYSTEM */
+:root {
+    --cream: #FFF7E8;
+    --orange: #F5A623;
+    --orange-dark: #F39B1D;
+    --teal: #2AB7B3;
+    --text-dark: #333;
+}
+
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+    background: var(--cream);
+}
+
+/* HEADER */
+.header {
+    background: var(--cream);
+    padding: 15px 0;
+}
+
+.header-inner {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.social img {
+    height: 22px;
+    margin-left: 12px;
+}
+
+.nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* MAIN SECTION */
+.main {
+    background: var(--orange);
+    padding: 50px 8% 80px;
+}
+
+/* Breadcrumb button */
+.breadcrumb {
+    display: inline-block;
+    background: var(--teal);
+    padding: 12px 25px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-size: 1rem;
+}
+
+.breadcrumb span {
+    padding: 0 8px;
+}
+
+/* CONTENT CARD */
+.content-card {
+    background: var(--cream);
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.content-card h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: var(--orange-dark);
+}
+
+.content-card p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.content-card .cta {
+    margin-top: 25px;
+}
+
+.email-link {
+    color: #004d70;
+    text-decoration: underline;
+    font-size: 1.05rem;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--cream);
+    padding: 50px 8%;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    min-width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 80px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 3px 0;
+}
+
+.footer a:hover {
+    color: var(--teal);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .content-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .breadcrumb {
+        display: block;
+        text-align: center;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        display: none; /* simple mobile layout */
+    }
+
+    .content-card {
+        padding: 25px;
+    }
+}
