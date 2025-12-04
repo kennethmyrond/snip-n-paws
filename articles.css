@@ -1,0 +1,160 @@
+/* COLOR PALETTE */
+:root {
+    --cream: #FFF7E8;
+    --orange: #FFAC1F;
+    --yellow: #FFD83C;
+    --orange-dark: #FF571F;
+    --teal: #34A89C;
+    --teal-dark: #1B7F72;
+    --text-dark: #333;
+    --lightorange: #FFEC9E;
+}
+
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+}
+
+/* HEADER */
+.header {
+    background: var(--cream);
+    padding: 15px 0;
+}
+
+.header-inner {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.social img {
+    height: 22px;
+    margin-left: 12px;
+}
+
+.nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* MAIN */
+.main {
+    background: var(--orange);
+    padding: 45px 8% 70px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: inline-block;
+    background: var(--teal);
+    color: var(--yellow);
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.breadcrumb span {
+    margin: 0 8px;
+}
+
+/* Title Badge */
+.title-badge {
+    background: var(--orange-dark);
+    color: #fff;
+    padding: 18px 25px;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Content Card */
+.content-card {
+    background: var(--lightorange);
+    padding: 35px 40px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content-card h3 {
+    color: var(--teal-dark);
+    margin-top: 18px;
+}
+
+.content-card ul {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--cream);
+    padding: 50px 8%;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    min-width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 80px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 3px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    .nav {
+        display: none;
+    }
+
+    .breadcrumb {
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    .title-badge {
+        font-size: 1.1rem;
+        padding: 15px 18px;
+    }
+
+    .content-card {
+        padding: 25px;
+    }
+}

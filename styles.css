@@ -1,6 +1,19 @@
 /* ------------------------------
    GLOBAL
 ------------------------------ */
+
+:root {
+    --cream: #FFF7E8;
+    --orange: #FFAC1F;
+    --yellow: #FFD83C;
+    --orange-dark: #FF571F;
+    --teal: #34A89C;
+    --teal-dark: #1B7F72;
+    --text-dark: #333;
+    --lightorange: #FFEC9E;
+}
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
