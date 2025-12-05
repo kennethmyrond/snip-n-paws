@@ -9,7 +9,7 @@
     --orange-dark: #FF571F;
     --teal: #34A89C;
     --teal-dark: #1B7F72;
-    --text-dark: #333;
+    --text-dark: #333333;
     --lightorange: #FFEC9E;
 }
 
@@ -75,7 +75,7 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 60px;
-    background-color: #f49b2e;
+    background-color: var(--orange);
     color: #222;
 }
 
