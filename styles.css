@@ -11,7 +11,7 @@
     --cream: #FFF7E8;
     --orange: #FFAC1F;
     --yellow: #FFD83C;
-    --orange-dark: #FF571F;
+    --orange-dark: #FF751F;
     --teal: #34A89C;
     --teal-dark: #1B7F72;
     --text-dark: #333333;
@@ -50,7 +50,7 @@ p {
     font-family: "Inclusive Sans", sans-serif !important;
 }
 
-small {
+small, span {
     font-family: "Quicksand", sans-serif !important;
 }
 
@@ -130,7 +130,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px;
+    padding: 60px 250px;
     background-color: var(--orange);
     color: #222;
 }
@@ -327,3 +327,39 @@ footer a {
     margin-bottom: 8px;
     color: #333;
 }
+
+/* -----------------------------------------
+   MOBILE FIXES
+----------------------------------------- */
+@media (max-width: 768px) {
+
+    /* HERO: Stack vertically */
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    /* HERO: Ensure text is above image */
+    .hero > div {
+        order: 1;
+    }
+
+    .hero img {
+        order: 2;
+        margin-top: 25px;
+        width: 260px; /* shrink nicely on mobile */
+    }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .donate-btn {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+}
+

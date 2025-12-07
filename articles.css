@@ -104,6 +104,10 @@ body {
     margin-bottom: 20px;
 }
 
+.image-bottom {
+    width: 100%;
+}
+
 /* FOOTER */
 .footer {
     background: var(--cream);

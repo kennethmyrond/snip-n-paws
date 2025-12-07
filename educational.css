@@ -69,25 +69,29 @@ body {
     max-width: 950px;
     margin: 0 auto 60px;
     border-radius: 50%;
-    padding: 80px 40px;
-    position: relative;
-    transform: rotate(-2deg);
+    padding: 70px 40px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; 
 }
 
 .oval-text {
     color: white;
-    font-size: 1.15rem;
-    width: 60%;
+    font-size: 1.3rem;
     line-height: 1.6;
+    max-width: 80%;
+    margin-bottom: 25px;
 }
 
 .oval-img {
-    position: absolute;
-    right: 40px;
-    bottom: 10px;
-    height: 230px;
-    transform: rotate(2deg);
+    width: 60%;
+    max-width: 260px;
+    height: auto;
+    display: block;
 }
+
 
 /* CARDS */
 .cards {
@@ -207,5 +211,50 @@ body {
 
     .centered {
         margin-top: 0;
+    }
+}
+
+/* MOBILE FIX — A perfect oval transformation */
+@media (max-width: 800px) {
+
+    .oval-section {
+        border-radius: 500px;    /* More natural oval on tablet */
+        padding: 50px 30px 35px;
+    }
+
+    .oval-img {
+        width: 70%;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .oval-section {
+        border-radius: 300px;   /* Prevents crushing on small screens */
+        padding: 45px 25px 30px;
+    }
+
+    .oval-text {
+        font-size: 1.05rem;
+        max-width: 95%;
+    }
+
+    .oval-img {
+        width: 75%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .oval-section {
+        border-radius: 200px;   /* Natural bubble shape on very small screens */
+        padding: 40px 20px 25px;
+    }
+
+    .oval-img {
+        width: 80%;
+        max-width: 180px;
     }
 }

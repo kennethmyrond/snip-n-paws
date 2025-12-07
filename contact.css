@@ -142,9 +142,9 @@ textarea {
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .contact-form {
-        width: 100%;
+        width: 80%;
     }
 
     .send-btn {
@@ -159,8 +159,10 @@ textarea {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .nav {
         display: none; /* Simplify header for mobile */
     }
 }
+
+
