@@ -1,95 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donate – Snip N' Save</title>
-  <link rel="stylesheet" href="donate.css" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snip N' Save – Donate</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="donate.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+      <!-- HEADER -->
   <header>
-    <img src="logo.png" alt="Snip N' Save Logo" width="80" />
+      <img src="assets/images/logo.png" alt="Snip N' Save Logo" width="80" />
 
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+      <div class="right-header">
+          <div class="social-icons">
+              <a href="#"><img src="assets/images/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="assets/images/instagram.png" alt="Instagram" /></a>
+              <a href="#"><img src="assets/images/twitter.png" alt="Twitter" /></a>
+          </div>
 
-    <div class="social-icons">
-      <a href="#"><img src="assets/images/facebook.png" alt="Facebook" /></a>
-      <a href="#"><img src="assets/images/instagram.png" alt="Instagram" /></a>
-      <a href="#"><img src="assets/images/twitter.png" alt="Twitter" /></a>
-    </div>
+          <nav>
+              <a href="home.html">Home</a>
+              <a href="about.html" >About Us</a>
+              <a href="contact.html">Contact Us</a>
+          </nav>
+      </div>
   </header>
 
-  <!-- Breadcrumb -->
-    <div class="breadcrumb">
-        <a href="home.html">Snip N’ Save</a> <span>›</span> <a href="donate.html">Donate</a>
-    </div>
+    <!-- MAIN CONTENT -->
+    <main class="main-section">
 
-  <!-- DONATION CONTENT SECTION -->
-  <section class="donation-container">
-    <h2 class="donate-title">Donate Now!</h2>
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+            <a href="home.html">Snip N’ Save</a> <span>›</span> <a href="donate.html">Donate</a>
+        </div>
 
-    <p class="donate-text">
-      At Snip N Save, every contribution counts! Your generous donations help us fund essential programs aimed at raising awareness about the importance of spaying and neutering cats and dogs in Moonwalk, Parañaque. With your support, we can provide educational resources, conduct community outreach, and facilitate spay/neuter programs that directly benefit local animals in need.
-    </p>
+        <!-- main card -->
+        <div class="donate-card">
 
-    <p class="donate-instructions">
-      <strong>Donation Instructions:</strong><br>
-      1. Scan our QR Code using GCash, Maya, and PayPal.<br>
-      2. Confirm your donation using the form below.
-    </p>
+            <!-- donate info -->
+            <div class="donate-info">
+                <h2>Donate Now!</h2>
 
-    <div class="qr-wrapper">
-      <img src="assets/images/qr.png" alt="QR Code" class="qr-img" />
-    </div>
+                <p>
+                    At Snip N Save, every contribution counts! Your generous donations help us fund 
+                    essential programs aimed at raising awareness about the importance of spaying 
+                    and neutering cats and dogs in Moonwalk, Parañaque. With your support, we can 
+                    provide educational resources, conduct community outreach, and facilitate 
+                    spay/neuter programs that directly benefit local animals in need.
+                </p>
 
-    <!-- FORM -->
-    <h3 class="confirm-title">Confirm Your Donation</h3>
+                <p class="instructions-title">Donation Instructions:</p>
+                <ol>
+                    <li>Scan our QR Code using GCash, Maya, and Paypal.</li>
+                    <li>Confirm your donation using the form below</li>
+                </ol>
 
-    <form class="donation-form">
-      <input type="text" placeholder="Name" required />
-      <input type="text" placeholder="Contact Number" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="number" placeholder="Amount Donated" required />
-      <button type="submit" class="confirm-btn">Confirm</button>
-    </form>
+                <img src="assets/images/qr.png" alt="QR Code" class="qr-image">
+            </div>
 
-  </section>
+            <!-- donation form -->
+            <div class="donate-form">
+                <h3>Confirm Your Donation</h3>
 
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Contact Number">
+                <input type="email" placeholder="Email Address">
+                <input type="number" placeholder="Amount Donated">
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div>
-      <img src="assets/images/logo.png" alt="Logo" class="logo" />
-    </div>
+                <button class="confirm-btn">Confirm</button>
+            </div>
 
-    <div>
-        <h4>CONTACT US</h4>
-        <p>snipnsave@gmail.com</p>
-        <p>639198024827</p>
-        <p>8320436</p>
-    </div>
+        </div>
+    </main>
 
-    <div>
-        <h4>QUICK LINKS</h4>
-        <a href="home.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="donate.html">Donate</a>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div>
+        <img src="assets/images/logo.png" alt="Logo" width="80" />
+        </div>
 
-    <div>
-        <h4>RESOURCES</h4>
-        <a href="educational.html">Educational Resources</a>
-        <a href="locations.html">Spay/Neuter Location</a>
-        <a href="join.html">Get Involved</a>
-    </div>
-  </footer>
+        <div>
+            <h4>CONTACT US</h4>
+            <p>snipnsave@gmail.com</p>
+            <p>639198024827</p>
+            <p>8320436</p>
+        </div>
+
+        <div>
+            <h4>QUICK LINKS</h4>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="donate.html">Donate</a>
+        </div>
+
+        <div>
+            <h4>RESOURCES</h4>
+            <a href="educational.html">Educational Resources</a>
+            <a href="locations.html">Spay/Neuter Location</a>
+            <a href="join.html">Get Involved</a>
+        </div>
+    </footer>
 
 </body>
 </html>

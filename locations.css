@@ -7,27 +7,7 @@ body {
     
 }
 
-/* HEADER */
-header {
-    background: #FFF8E6;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-header nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-}
-
-.social-icons i {
-    margin-left: 15px;
-    font-size: 18px;
-    cursor: pointer;
-}
 
 /* MAIN CONTENT */
 .main {
@@ -120,7 +100,7 @@ header nav a {
 }
 
 .clinic-info a {
-    color: #004AAD;
+    color: var(--text-dark);
     word-wrap: break-word;
     display: block;
     margin-top: 6px;
@@ -135,7 +115,7 @@ header nav a {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 30px;
     font-size: 15px;
 }
 

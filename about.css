@@ -48,8 +48,6 @@ body {
 
 .mission-img img {
     width: 380px;
-    border: 6px solid var(--orange);
-    border-radius: 12px;
 }
 
 .mission-text {

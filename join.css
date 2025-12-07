@@ -61,7 +61,7 @@ body {
     background: var(--teal);
     padding: 12px 25px;
     border-radius: 10px;
-    color: #fff;
+    color: var(--yellow);
     font-weight: bold;
     margin-bottom: 35px;
     font-size: 1rem;
@@ -73,7 +73,7 @@ body {
 
 /* CONTENT CARD */
 .content-card {
-    background: var(--cream);
+    background: var(--lightorange);
     padding: 40px;
     max-width: 900px;
     margin: auto;

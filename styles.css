@@ -2,6 +2,11 @@
    GLOBAL
 ------------------------------ */
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
 :root {
     --cream: #FFF7E8;
     --orange: #FFAC1F;
@@ -31,13 +36,32 @@ img {
     display: block;
 }
 
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "League Spartan", sans-serif !important;
+}
+
+p {
+    font-family: "Inclusive Sans", sans-serif !important;
+}
+
+small {
+    font-family: "Quicksand", sans-serif !important;
+}
+
+
 /* ------------------------------
    HEADER
 ------------------------------ */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px 40px;
     background: #fdf8e7;
     position: sticky;
@@ -45,6 +69,26 @@ header {
     z-index: 10;
 }
 
+/* Container for social icons + nav */
+.right-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Social icons row */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-icons img {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Navigation links */
 nav a {
     margin-left: 20px;
     color: #2c6e63;
@@ -61,11 +105,23 @@ nav a:hover {
     color: #1b9860;
 }
 
-.social-icons img {
-    width: 20px;
-    margin-left: 15px;
-    cursor: pointer;
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-header {
+        align-items: center;
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
 }
+
 
 /* ------------------------------
    HERO SECTION
