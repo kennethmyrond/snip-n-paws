@@ -35,7 +35,7 @@ body {
 .hero {
     padding: 40px 0;
     text-align: center;
-    width: 500px;
+    width: 100%;
 }
 
 .hero-image-wrapper {
@@ -45,9 +45,10 @@ body {
 
 .pets-img {
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     display: block;
     border-radius: 12px;
+    align-items: center;
 }
 
 /* Text inside the image */
