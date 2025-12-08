@@ -174,12 +174,19 @@ nav a:hover {
 /* ------------------------------
    SERVICES GRID
 ------------------------------ */
+.service-section {
+    background: #37c1b7;
+    padding: 60px 0px;
+}
+
 .services {
     background: #37c1b7;
-    padding: 60px 40px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    justify-content: center;
+    margin: 20px 0px;
 }
 
 .card {
@@ -328,6 +335,7 @@ footer a {
     display: block;
     margin-bottom: 8px;
     color: #333;
+    font-family: "Quicksand", sans-serif !important;
 }
 
 /* -----------------------------------------
