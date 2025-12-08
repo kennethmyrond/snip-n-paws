@@ -171,11 +171,13 @@ body {
     .intro {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .intro-text {
         order: 1;
         text-align: center;
+        align-items: center;
     }
 
     .intro-img {
@@ -210,14 +212,20 @@ body {
 
 
     /* MEMBERS */
+    .members{
+        padding: 20px;
+    }
+
     .member-list {
         grid-template-columns: 1fr;
         text-align: left;  
-        padding: 0px 100px;
+        padding: 0px 90px;
+        margin: 0px;
     }
 
     .member-list ul {
         padding-left: 0;
+        margin: 0px;
     }
 }
 

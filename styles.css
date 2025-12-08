@@ -132,13 +132,13 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 250px;
+    padding: 60px 250px 0px;
     background-color: var(--orange);
     color: #222;
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -152,7 +152,7 @@ nav a:hover {
 
 .hero img {
     width: 470px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 /* Primary Button */
@@ -340,6 +340,10 @@ footer a {
     font-family: "Quicksand", sans-serif !important;
 }
 
+footer p {
+    margin: 0px 0px 8px;
+}
+
 footer img {
     width: 150px;
 }
@@ -363,7 +367,24 @@ footer img {
     .hero img {
         order: 2;
         margin-top: 25px;
-        width: 260px; /* shrink nicely on mobile */
+        width: 200px; /* shrink nicely on mobile */
+    }
+
+    .services {
+        margin: 40px;
+    }
+
+    .card {
+        width: 300px;
+        height: 200px;
+    }
+
+    footer img{
+        width: 120px;
+    }
+
+    footer {
+        gap: 20px;
     }
 }
 
