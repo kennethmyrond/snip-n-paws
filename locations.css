@@ -12,7 +12,7 @@ body {
 /* MAIN CONTENT */
 .main {
     background: var(--orange);
-    padding: 40px 8% 80px;
+    padding: 40px 8% 10px;
 }
 
 /* Breadcrumb */
@@ -23,7 +23,7 @@ body {
     padding: 12px 25px;
     border-radius: 10px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .breadcrumb span {
@@ -33,35 +33,41 @@ body {
 
 /* HERO */
 .hero {
-    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100%;
-}
-
-.hero-image-wrapper {
-    position: relative;
-    display: inline-block;
+    height: auto;                       
+    box-sizing: border-box;
 }
 
 .pets-img {
-    width: 100%;
-    max-width: 100%;
+    width: 100%;           
+    height: auto;        
     display: block;
-    border-radius: 12px;
-    align-items: center;
+    border-radius: 0;
 }
 
-/* Text inside the image */
+
+.hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;            
+    margin: 0;              
+    padding: 0;             
+}
+
+
 .hero-text {
     position: absolute;
-    top: 50%;                /* vertically centered */
-    left: 50%;               /* horizontally centered */
+    top: 50%;                
+    left: 50%;               
     transform: translate(-50%, -50%);
-    width: 80%;              /* prevents text from touching edges */
+    width: 80%;             
     color: #fff;
     text-align: center;
-
-    /* readability */
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
