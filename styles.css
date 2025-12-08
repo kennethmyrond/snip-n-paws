@@ -14,6 +14,7 @@
     --orange-dark: #FF751F;
     --teal: #34A89C;
     --teal-dark: #1B7F72;
+    --turquois: #42cbb6;
     --text-dark: #333333;
     --lightorange: #FFEC9E;
 }
@@ -42,12 +43,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, button {
     font-family: "League Spartan", sans-serif !important;
 }
 
 p {
-    font-family: "Inclusive Sans", sans-serif !important;
+    /* font-family: "Inclusive Sans", sans-serif !important; */
+    font-family: "Quicksand", sans-serif !important;
 }
 
 small, span {

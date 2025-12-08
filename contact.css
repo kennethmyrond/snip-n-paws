@@ -56,12 +56,13 @@ body {
     color: #333;
     font-size: 1.1rem;
     margin-bottom: 40px;
+    text-align: justify;
 }
 
 /* FORM CARD */
 .contact-form {
-    background: var(--cream);
-    border: 8px solid var(--teal);
+    background: var(--teal);
+    /* border: 8px solid var(--teal); */
     padding: 25px;
     width: 90%;
     max-width: 800px;
@@ -72,7 +73,7 @@ body {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    border: 3px solid var(--teal);
+    border: 1px solid gray;
     padding: 12px;
     margin-bottom: 15px;
     font-size: 1rem;
@@ -93,11 +94,13 @@ textarea {
     margin-right: 8%;
     background: #FFDF59;
     border: none;
-    padding: 14px 35px;
-    font-size: 1.1rem;
+    padding: 10px 35px;
+    font-size: 1.5rem;
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
+    color: var(--teal-dark);
+    font-weight: 1500;
 }
 
 .send-btn:hover {
