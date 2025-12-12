@@ -183,6 +183,7 @@ body {
     }
 
     .oval-text {
+        margin-top: 50px;
         width: 90%;
     }
 
@@ -191,6 +192,20 @@ body {
         display: block;
         margin: 20px auto 0;
         transform: rotate(0);
+    }
+
+    .cards {
+        margin-top: 35px;
+    }
+
+    .oval-section {
+        border-radius: 500px;    
+        padding: 50px 30px 35px;
+    }
+
+    .oval-img {
+        width: 70%;
+        max-width: 220px;
     }
 }
 
@@ -209,32 +224,15 @@ body {
     }
 
     .card:nth-child(2) {
-        margin-top: 0;
+        margin-top: 35px;
     }
 
     .centered {
         margin-top: 0;
     }
-}
-
-/* MOBILE FIX — A perfect oval transformation */
-@media (max-width: 800px) {
 
     .oval-section {
-        border-radius: 500px;    /* More natural oval on tablet */
-        padding: 50px 30px 35px;
-    }
-
-    .oval-img {
-        width: 70%;
-        max-width: 220px;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .oval-section {
-        border-radius: 300px;   /* Prevents crushing on small screens */
+        border-radius: 300px;  
         padding: 45px 25px 30px;
     }
 
@@ -247,17 +245,25 @@ body {
         width: 75%;
         max-width: 200px;
     }
+
+    .cards {
+        margin-top: 35px;
+    }
 }
 
 @media (max-width: 420px) {
 
     .oval-section {
-        border-radius: 200px;   /* Natural bubble shape on very small screens */
+        border-radius: 200px;  
         padding: 40px 20px 25px;
     }
 
     .oval-img {
         width: 80%;
         max-width: 180px;
+    }
+
+    .cards {
+        margin-top: 35px;
     }
 }

@@ -10,7 +10,7 @@ body {
     background: var(--orange);
     color: var(--text-dark);
     display: flex;
-    padding: 60px 8%;
+    padding: 60px 15%;
 }
 
 .intro-text {
@@ -40,10 +40,10 @@ body {
 
 /* MISSION SECTION */
 .mission-section {
-    background: var(--teal);
+    background: var(--turquois);
     color: #fff;
     display: flex;
-    padding: 60px 8%;
+    padding: 60px 15%;
 }
 
 .mission-img img {
