@@ -101,6 +101,7 @@ body {
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 35px;
+    margin-top: 35px;
 }
 
 .educ-card {
@@ -119,6 +120,7 @@ body {
 
 .educ-card img {
     height: 300px;
+    width: 500px;
     object-fit: cover;
     
 }

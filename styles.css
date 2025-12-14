@@ -47,7 +47,7 @@ h6, button {
     font-family: "League Spartan", sans-serif !important;
 }
 
-p {
+p, ul, li {
     /* font-family: "Inclusive Sans", sans-serif !important; */
     font-family: "Quicksand", sans-serif !important;
 }
