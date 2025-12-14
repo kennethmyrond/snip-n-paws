@@ -200,4 +200,24 @@ body {
     .content-card {
         padding: 25px;
     }
+
+    .content-card-left,
+    .content-card-right {
+        flex-direction: column;
+        height: auto;
+        text-align: left;
+    }
+
+    .image-side {
+        max-width: 220px;
+        margin-top: 20px;
+    }
+
+    .content-card-left ul,
+    .content-card-right ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
 }
+
+
