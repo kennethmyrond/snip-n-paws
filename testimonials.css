@@ -108,7 +108,7 @@ body {
 }
 
 .testimonial-card {
-    background: var(--light-yellow);
+    background: var(--lightorange);
     padding: 40px 30px;
     border-radius: 25px;
 }
