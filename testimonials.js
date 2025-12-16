@@ -1,8 +1,8 @@
 const testimonials = [
     {
-        img: "assets/images/edures.jpg",
-        title: "Happy Pet Owner",
-        text: "Snip N' Save helped my dog get the proper care she needed. The team is friendly and professional!"
+        img: "assets/images/testimonial2.jfif",
+        title: "Alex R.",
+        text: "Snip N' Save is short yet incredibly informative, providing essential insights into spaying and neutering in a straightforward manner"
     },
     {
         img: "assets/images/edures.jpg",
