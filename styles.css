@@ -316,37 +316,43 @@ nav a:hover {
     background: #d78622;
 }
 
+
 /* ------------------------------
    FOOTER
 ------------------------------ */
 footer {
     background: #fdf8e7;
-    padding: 40px;
-    display: flex;
+    padding: 40px 60px;
+
+    display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 80px;
+    align-items: start;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 100px;
 }
 
-footer div {
-    margin: 10px 0;
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
+footer h4 {
+    min-height: 24px;
+    margin-bottom: 10px;
+}
+
+footer p,
 footer a {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
+    margin: 0;
+    line-height: 1.6;
     font-family: "Quicksand", sans-serif !important;
 }
 
-footer p {
-    margin: 0px 0px 8px;
+footer img {
+    width: 190px;
 }
 
-footer img {
-    width: 150px;
-}
 
 /* -----------------------------------------
    MOBILE FIXES
@@ -356,7 +362,7 @@ footer img {
     /* HERO: Stack vertically */
     .hero {
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 40px 20px 0px;
     }
 
     /* HERO: Ensure text is above image */
@@ -367,7 +373,7 @@ footer img {
     .hero img {
         order: 2;
         margin-top: 25px;
-        width: 200px; /* shrink nicely on mobile */
+        width: 250px; /* shrink nicely on mobile */
     }
 
     .services {
@@ -384,7 +390,8 @@ footer img {
     }
 
     footer {
-        gap: 20px;
+        gap: 5px;
+        grid-template-columns: 175px 175px ;
     }
 }
 
